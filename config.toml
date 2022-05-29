@@ -1,4 +1,4 @@
 baseURL = 'https://scheuclu.github.io/hugo101'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Lukas Scheucher'
 theme = "ananke"
