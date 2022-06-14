@@ -22,21 +22,5 @@ Here's the feature specification:
 
 The implementation can be found [here](https://github.com/scheuclu/OverkillCalculator).
 
- {{ $giphy := resources.Get "images/misc/giphy.gif" }}
-  <img src="{{ $giphy.RelPermalink }}" />
 
-
-[/images/calculator.gif]
-
-![Alt text for my gif](/images/test.jpg)
-![Alt text2 for my gif](images/test.jpg)
-
-![Alt text2 for my gif](./images/test.jpg)
-
-![Alt text2 for my gif](../../static/images/test.jpg)
-
-![](calculator.gif)
-![](./calculator.gif)
-
-
-![](./content/calculator.gif)
+![Demo](/images/calculator.gif)
