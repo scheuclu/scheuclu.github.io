@@ -2,3 +2,6 @@ baseURL = 'https://scheuclu.github.io'
 languageCode = 'en-us'
 title = 'Lukas Scheucher'
 theme = "ananke"
+enableEmoji = true
+[markup.goldmark.renderer]
+ unsafe = true
