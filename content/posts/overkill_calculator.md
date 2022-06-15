@@ -2,7 +2,7 @@
 title: "Implementing a calculator from scratch"
 date: 2022-05-29T15:01:17+02:00
 draft: false
-featured_image: 'numbers.png'
+featured_image: '/images/numbers.png'
 ---
 
 [Github](https://github.com/scheuclu/mandelbrot)&nbsp;&nbsp;

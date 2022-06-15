@@ -1,5 +1,5 @@
 ---
-featured_image: 'https://raw.githubusercontent.com/scheuclu/hugo101/main/content/profile.jpeg'
+featured_image: '/images/profile.jpeg'
 ---
 
 

@@ -2,7 +2,7 @@
 title: "Mandelbrot images"
 date: 2022-06-14T15:01:17+02:00
 draft: false
-featured_image: 'mandelbrot.png'
+featured_image: '/images/mandelbrot.png'
 katex: true
 ---
 <script type="text/javascript"
