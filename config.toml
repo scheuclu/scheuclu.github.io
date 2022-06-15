@@ -3,5 +3,6 @@ languageCode = 'en-us'
 title = 'Lukas Scheucher'
 theme = "ananke"
 enableEmoji = true
+disqusShortname =  'lukasscheucher'
 [markup.goldmark.renderer]
  unsafe = true
