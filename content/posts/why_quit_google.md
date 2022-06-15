@@ -1,6 +1,6 @@
 ---
 title: "Why I quit my job at Google"
-date: 2022-05-29T15:01:17+02:00
+date: 2022-03-29T15:01:17+02:00
 draft: false
 featured_image: 'google_logo.png'
 ---
