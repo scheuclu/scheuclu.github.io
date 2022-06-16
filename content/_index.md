@@ -6,6 +6,16 @@ featured_image: '/images/profile.jpeg'
 </script>
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FL0RFP3MP3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FL0RFP3MP3');
+</script>
+
+
 Hi, I am an Austrian software developer who turned from Big Tech to freelancing during the COVID pandemic.
 
 I have an education from [Technical University of Munich]([TODO](https://www.tum.de/en/)) as well as [Stanford University]([TODO](https://www.stanford.edu/)). However, I consider myself a lifelong learner, so I have plenty or other certifications.
