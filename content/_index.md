@@ -1,17 +1,23 @@
 ---
 featured_image: '/images/profile.jpeg'
 ---
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 Hi, I am an Austrian software developer who turned from Big Tech to freelancing during the COVID pandemic.
 
-I have an education from [Technical University of Munich](TODO) as well as [Stanford University](TODO).
+I have an education from [Technical University of Munich]([TODO](https://www.tum.de/en/)) as well as [Stanford University]([TODO](https://www.stanford.edu/)). However, I consider myself a lifelong learner, so I have plenty or other certifications.
 
 My favourite language is Python:heart:, but I am also fluent in C, C++ and Go.
 
-Field that excite me are anything that has to do with Machine Learning, Data Visualization and Blockchain Technology.
+Fields that excite me are Machine Learning, Data Visualization and Blockchain Technology.
+I believe technology is about empowering people, so I value anything that brings accessibility to the masses and removes centralization.
 
 
-Other than that, I am passionate about history, fiction and Formula 1!
+Other than that, I am passionate about nature, fiction and Formula 1 (🇳🇱)!
 
-Please check out my [CV](https://scheuclu.github.io/cv/) and [portfolio](https://scheuclu.github.io/posts/), and if you think I could help you with your project, please [reach out](https://scheuclu.github.io/contact/)!
+Please check out my [CV](https://scheuclu.github.io/cv/) and [portfolio](https://scheuclu.github.io/posts/).
+
+**If you think I could help you with your project, please dont hestitate to [reach out](https://scheuclu.github.io/contact/)!**
