@@ -60,3 +60,5 @@ There's a specialist for everything. The company has grown enormously over the l
 Google has great offices, but they are all in major population centers. These all have the problems of high housing prices, long commutes and unhealthy life styles.
 I don't want my life to revolve around large cities anymore, and Google did not give me the option to work from home permanently.
 Relocation reuquests were denied.
+
+![](/images/dream_office.png)
