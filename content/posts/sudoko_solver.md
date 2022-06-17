@@ -20,7 +20,7 @@ I support both manual input as well as input via camera or webcam.
 
 Here's a little demo of how it works.
 
-![](/images/sudoku.gif)
+![](https://www.youtube.com/watch?v=swQfVmZG-00)
 
 ## Overview
 The solver consists of the following step
