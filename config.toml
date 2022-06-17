@@ -7,3 +7,18 @@ enableEmoji = true
 disqusShortname =  'lukasscheucher'
 [markup.goldmark.renderer]
  unsafe = true
+
+[[params.ananke_socials]]
+name = "github"
+url = "https://github.com/scheuclu"
+
+[[params.ananke_socials]]
+name = "linkedin"
+url = "https://linkedin.com/in/scheuclu"
+
+[[params.ananke_socials]]
+name = "youtube"
+url = "https://www.youtube.com/channel/UC0So4gJ11qUZI_dzqVMOq8w"
+
+[params]
+  site_logo = "/images/logo.png"
