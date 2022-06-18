@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lukas Scheucher</title><link>https://scheuclu.github.io/</link><description>Recent content on Lukas Scheucher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 14 Jun 2022 15:01:17 +0200</lastBuildDate><atom:link href="https://scheuclu.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Mandelbrot images</title><link>https://scheuclu.github.io/posts/mandelbrot/</link><pubDate>Tue, 14 Jun 2022 15:01:17 +0200</pubDate><guid>https://scheuclu.github.io/posts/mandelbrot/</guid><description>Github Deployed
-The mandelbrot explorer Overview The goal of this project was to implement an interactive explorer for the mandelbrot set.
+The Mandelbrot Explorer Overview The goal of this project was to implement an interactive explorer for the mandelbrot set.
 It&amp;rsquo;s definition is very simple. A complex number c is considered to be in the mandelbrot set if the iteration
 $$\forall c \in \mathbb{C}: \\ ~ \\ z_{0}=0 \\ z_{i+1}=z_{i}^2+c$$
 converges to a stationary value. Coloring all the convergent points, gives a picture like this
