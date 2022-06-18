@@ -12,7 +12,7 @@ katex: true
 [Github](https://github.com/scheuclu/mandelbrot)&nbsp;&nbsp;
 [Deployed](https://share.streamlit.io/scheuclu/mandelbrot_python/main/webpage.py)
 
-# The mandelbrot explorer
+# The Mandelbrot Explorer
 
 ## Overview
 The goal of this project was to implement an interactive explorer for the [mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set).
