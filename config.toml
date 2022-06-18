@@ -17,7 +17,7 @@ url = "https://linkedin.com/in/scheuclu"
 name = "youtube"
 url = "https://www.youtube.com/channel/UC0So4gJ11qUZI_dzqVMOq8w"
 [params]
-site_logo = "/images/logo.png"
+site_logo = "/images/logo_white_small.png"
 [sitemap]
 changefreq = "weekly"
 filename = "sitemap.xml"
