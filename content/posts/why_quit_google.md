@@ -62,3 +62,5 @@ I don't want my life to revolve around large cities anymore, and Google did not 
 Relocation reuquests were denied.
 
 ![](/images/dream_office.png)
+
+
