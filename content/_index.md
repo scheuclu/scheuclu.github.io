@@ -18,7 +18,7 @@ featured_image: '/images/profile.jpeg'
 
 Hi, I am an Austrian software developer who turned from Big Tech to freelancing during the COVID pandemic.
 
-I have an education from [Technical University of Munich]([TODO](https://www.tum.de/en/)) as well as [Stanford University]([TODO](https://www.stanford.edu/)). However, I consider myself a lifelong learner, so I have plenty or other certifications.
+I have an education from [Technical University of Munich](https://www.tum.de/en/) as well as [Stanford University](https://www.stanford.edu/). However, I consider myself a lifelong learner, so I have plenty or other certifications.
 
 My favourite language is Python:heart:, but I am also fluent in C, C++ and Go.
 

@@ -12,7 +12,7 @@ katex: true
 [Github](https://github.com/scheuclu/mandelbrot)&nbsp;&nbsp;
 [Deployed](https://share.streamlit.io/scheuclu/mandelbrot_python/main/webpage.py)
 
-# The mandelbrot explorer
+# The Mandelbrot Explorer
 
 ## Overview
 The goal of this project was to implement an interactive explorer for the [mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set).
@@ -37,12 +37,11 @@ The deployed website above let's you interactively inspect the set. I also creat
 {{< youtube 6KapQf8ZErs >}}
 
 ## Implementation
-I had first implement the logic in [C++]([TODD](https://github.com/scheuclu/mandelbrot)).
-However, I found it difficult to parralelize this efficiently. What I could do is divide the area into `N` subareas, where `N` is the number of threads available. However, depending on where in the number plane one is, the iteration can take longer or it my abort sooner.
+I had first implement the logic in [C++](https://github.com/scheuclu/mandelbrot).
+However, I found it difficult to parrallelize this efficiently. What I could do is divide the area into `N` sub-areas, where `N` is the number of threads available. However, depending on where in the number plane one is, the iteration can take longer or it may abort sooner.
 
 So, I could just create a huge heap with the pixels to be processed and then feed them to the compute threads 1 by 1.
-
-However, I found that I can be as fast when using `numpy.arrays` in Python.
+However, I found that using `numpy.arrays` in Python is a lot more efficient.
 This has the added benefit of IO becoming trivial.
 
 You can find the implementation [here](https://github.com/scheuclu/mandelbrot_python).

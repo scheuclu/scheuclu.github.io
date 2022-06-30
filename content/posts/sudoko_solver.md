@@ -23,12 +23,12 @@ Here's a little demo of how it works.
 {{< youtube swQfVmZG-00 >}}
 
 ## Overview
-The solver consists of the following step
+The solver consists of the following steps:
 
 1. Read the image from webcam
-2. Identify the sudoku grid using classical computer vision
+2. Identify the Sudoku grid using classical computer vision
 3. Dewarp the grid to rectangular format
 4. Split the rectangle into 9x9 subimages
-5. Identify the content of eacht subimage
+5. Identify the content of each subimage
 6. Brute Force a solution
 
