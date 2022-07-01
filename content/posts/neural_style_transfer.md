@@ -49,38 +49,21 @@ $$J_{style}(S,G) = \sum_{l} \lambda^{[l]} J^{[l]}_{style}(S,G)$$
 Finally, let's create a cost function that minimizes both the style and the content cost. The formula is: 
 $$J(G) = \alpha J_{content}(C,G) + \beta J_{style}(S,G)$$
 
-{{< carousel items="1" height="800" width="800" unit="px" duration="7000" >}}
 
-TODO image-gallery gallery_dir="style_transfer" 
+{{< gallery  caption-effect="none" >}}
+  {{< figure src="/images/style_transfer/content/edritz_content_image.jpg" caption="content" >}}
+  {{< figure src="/images/style_transfer/style/pop_art.jpg" caption="style" >}}
+  {{< figure src="/images/style_transfer/edritz/edritz_pop_art.jpg" caption="result" >}}
 
+  {{< figure src="/images/style_transfer/content/edritz_content_image.jpg" caption="content" >}}
+  {{< figure src="/images/style_transfer/style/wood.jpg" caption="style" >}}
+  {{< figure src="/images/style_transfer/edritz/edritz_wood.jpg" caption="result" >}}
 
+  {{< figure src="/images/style_transfer/content/edritz_content_image.jpg" caption="content" >}}
+  {{< figure src="/images/style_transfer/style/mona_lisa.jpg" caption="style" >}}
+  {{< figure src="/images/style_transfer/edritz/edritz_mona_lisa.jpg" caption="result" >}}
 
-<iframe src="https://albumizr.com/a/4ZyS" scrolling="no" frameborder="0" allowfullscreen width="700" height="800"></iframe>
-
-
-<div class="row">
-  <div class="column">
-    <img src="/images/style_transfer/result/favourites/edritz_mona_lisa.jpg" alt="Nature" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="/images/style_transfer/result/favourites/edritz_mona_lisa.jpg" alt="Snow" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="/images/style_transfer/result/favourites/edritz_mona_lisa.jpg" alt="Mountains" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="/images/style_transfer/result/favourites/edritz_mona_lisa.jpg" alt="Lights" onclick="myFunction(this);">
-  </div>
-</div>
-
-<!-- The expanding image container -->
-<div class="container">
-  <!-- Close the image -->
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-
-  <!-- Expanded image -->
-  <img id="expandedImg" style="width:100%">
-
-  <!-- Image text -->
-  <div id="imgtext"></div>
-</div>
+  {{< figure src="/images/style_transfer/content/edritz_content_image.jpg" caption="content" >}}
+  {{< figure src="/images/style_transfer/style/lilies.jpg" caption="style" >}}
+  {{< figure src="/images/style_transfer/edritz/edritz_lilies.jpg" caption="result" >}}
+{{< /gallery >}} {{< load-photoswipe >}}
