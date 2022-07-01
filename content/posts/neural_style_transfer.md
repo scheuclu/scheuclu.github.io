@@ -3,12 +3,8 @@ title: "Neural Style Transfer"
 date: 2022-06-19T15:01:17+02:00
 draft: false
 featured_image: '/images/style_transfer/result/favourites/edritz_pop_art.jpg'
-katex: true
+math: true
 ---
-<script type="text/javascript"
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
 
 # Neural Style transfer
 
@@ -20,14 +16,14 @@ To do this, we start with a simple classification Convolutional Neural Network (
 
 ![](/images/cnn.png)
 
-See also [here](TODO) for a more extensive explanation.
+See also [here]([TODO](https://en.wikipedia.org/wiki/Neural_style_transfer)) for a more extensive explanation.
 
 In my case I used VGG-19. Now, VGG-19 takes an input image, succcesively applies convolutions until a much smaller feature map is obtained. The feature map is then fed into a softmax to obtain classifications for N classes.
 
 
 
 ## The style matrix
-The style matrix is also called a "Gram matrix." In linear algebra, the Gram matrix G of a set of vectors $(v_{1},\dots ,v_{n})$ is the matrix of dot products, whose entries are ${\displaystyle G_{ij} = v_{i}^T v_{j} = np.dot(v_{i}, v_{j})  }$. In other words, $G_{ij}$ compares how similar $v_i$ is to $v_j$: If they are highly similar, you would expect them to have a large dot product, and thus for $G_{ij}$ to be large. 
+The style matrix is also called a "Gram matrix." In linear algebra, the Gram matrix G of a set of vectors $(v_{1},\dots ,v_{n})$ is the matrix of dot products, whose entries are $${\displaystyle G_{ij} = v_{i}^T v_{j} = np.dot(v_{i}, v_{j})  }$$. In other words, $G_{ij}$ compares how similar $v_i$ is to $v_j$: If they are highly similar, you would expect them to have a large dot product, and thus for $G_{ij}$ to be large. 
 
 
 
