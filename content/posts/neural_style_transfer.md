@@ -30,8 +30,13 @@ The style matrix is also called a "Gram matrix." In linear algebra, the Gram mat
 ## Style cost
 After generating the Style matrix (Gram matrix), your goal will be to minimize the distance between the Gram matrix of the "style" image S and that of the "generated" image G. For now, we are using only a single hidden layer $a^{[l]}$, and the corresponding style cost for this layer is defined as: 
 
+$$ J_{style}^{[l]}(S,G) = \frac{1}{4} \times {n_C}^2 \times
+(n_H \times n_W^2  \sum_{i=1}^{n_C} \sum_{j=1}^{n_C} 
+(\Delta G )^2$$
+with
+$$ \Delta G = G_{ij}^{(S)} - G_{ij}^{(G)}  $$
 
-$$ J_{style}^{[l]}(S,G) = \frac{1}{4} \times {n_C}^2 \times (n_H \times n_W)^2 \sum _{i=1}^{n_C}\sum_{j=1}^{n_C}(G^{(S)}_{ij} - G^{(G)}_{ij})^2 $$
+<!-- $$ J_{style}^{[l]}(S,G) = \frac{1}{4} \times {n_C}^2 \times (n_H \times n_W^2 \sum_{i=1}^{n_C}\sum_{j=1}^{n_C}(G^{(S)}_{ij} - G^{(G)}_{ij})^2 $$ -->
 
 where $G^{(S)}$ and $G^{(G)}$ are respectively the Gram matrices of the "style" image and the "generated" image, computed using the hidden layer activations for a particular hidden layer in the network.  
 
