@@ -7,9 +7,6 @@ Documentation and licence at https://github.com/liwenyip/hugo-easy-gallery/
 /*
 Grid Layout Styles
 */
-.center {
-    text-align: center;
-}
 
 .gallery {
     overflow: hidden;
