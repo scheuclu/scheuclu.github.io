@@ -67,4 +67,8 @@ $$J(G) = \alpha J_{content}(C,G) + \beta J_{style}(S,G)$$
   {{< figure src="/images/style_transfer/content/edritz_content_image.jpg" caption="content" >}}
   {{< figure src="/images/style_transfer/style/lilies.jpg" caption="style" >}}
   {{< figure src="/images/style_transfer/edritz/edritz_lilies.jpg" caption="result" >}}
+
+  {{< figure src="/images/style_transfer/content/edritz_content_image.jpg" caption="content" >}}
+  {{< figure src="/images/style_transfer/style/psy1.jpg" caption="style" >}}
+  {{< figure src="/images/style_transfer/result/edritz_psy_5.jpg" caption="result" >}}
 {{< /gallery >}} {{< load-photoswipe >}}
