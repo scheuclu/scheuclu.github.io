@@ -30,6 +30,10 @@
   </header>
 {{ end }}
 
+{{ if .Params.plotly }}
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+{{ end }}
+
 
 {{ if .Params.math }}{{ partial "helpers/katex.html" . }}{{ end }}
 <script>
