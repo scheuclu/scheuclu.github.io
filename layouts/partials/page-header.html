@@ -34,6 +34,9 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 {{ end }}
 
+{{ if .Params.custom_table }}
+    <link rel="stylesheet" href={{ "css/table.css" | relURL }} />
+{{ end }}
 
 {{ if .Params.math }}{{ partial "helpers/katex.html" . }}{{ end }}
 <script>

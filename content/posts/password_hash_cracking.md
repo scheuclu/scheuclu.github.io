@@ -1,10 +1,11 @@
 ---
 title: "Password hash cracking"
 date: 2022-07-27T15:01:17+02:00
-draft: false
+draft: true
 featured_image: '/images/numbers.png'
 plotly: true
 math: true
+custom_table: true
 ---
 <script type="text/javascript"
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
@@ -55,7 +56,7 @@ def dummy_hash_password(s):
 ```
 
 | Password      | hash |
-| :---        |    ----:   |
+| :---        |    :----   |
 | code      | 136       |
 | code1      | 20      |
 | code1!   | 152        |
@@ -182,17 +183,6 @@ This results in the following table:
 
 As you can see, the cost is drastically reduced, while we will still recover a vast majoriy of passwords using these assumptions.
 
-
-| Disk 0 | Disk 1 | Disk 2 | Disk 3 |
-|:------:|:------:|:------:|:-------:|
-|   A1   |   A2   |   A3   | Ap(1-3) |
-|   A4   |   A5   |   A6   | Ap(4-6) |
-|   B1   |   B2   |   B3   | Bp(1-3) |
-|   B4   |   B5   |   B6   | Bp(4-6) |
-
-
-
-## This is a test
 
 
 

@@ -3,6 +3,7 @@ baseURL = 'https://scheuclu.github.io'
 languageCode = 'en-us'
 title = 'Lukas Scheucher'
 theme = "ananke"
+custom_css = ["css/table.css"]
 enableEmoji = true
 disqusShortname =  'lukasscheucher'
 [markup.goldmark.renderer]
