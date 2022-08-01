@@ -1,7 +1,7 @@
 ---
 title: "Password hash cracking"
 date: 2022-07-27T15:01:17+02:00
-draft: true
+draft: false
 featured_image: '/images/numbers.png'
 plotly: true
 math: true
