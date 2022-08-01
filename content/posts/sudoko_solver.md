@@ -4,6 +4,8 @@ date: 2022-04-02T15:01:17+02:00
 draft: false
 featured_image: '/images/sudoku.png'
 katex: true
+
+tags: ["machine learning", "Python"]
 ---
 
 

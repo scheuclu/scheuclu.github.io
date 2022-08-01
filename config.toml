@@ -6,20 +6,37 @@ theme = "ananke"
 custom_css = ["css/table.css"]
 enableEmoji = true
 disqusShortname =  'lukasscheucher'
+
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+Paginate = 6 # this is set low for demonstrating with dummy content. Set to a higher number
+enableRobotsTXT = true
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+
+[[menu.main]]
+    name = "Tags"
+    identifier = "tags"
+    weight = 300
+    url = "/tags/"
+
 [markup.goldmark.renderer]
-unsafe = true
+    unsafe = true
 [[params.ananke_socials]]
-name = "github"
-url = "https://github.com/scheuclu"
+    name = "github"
+    url = "https://github.com/scheuclu"
 [[params.ananke_socials]]
-name = "linkedin"
-url = "https://linkedin.com/in/scheuclu"
+    name = "linkedin"
+    rl = "https://linkedin.com/in/scheuclu"
 [[params.ananke_socials]]
-name = "youtube"
-url = "https://www.youtube.com/channel/UC0So4gJ11qUZI_dzqVMOq8w"
+    name = "youtube"
+    url = "https://www.youtube.com/channel/UC0So4gJ11qUZI_dzqVMOq8w"
 [params]
-site_logo = "/images/logo_white_small.png"
+    site_logo = "/images/logo_white_small.png"
 [sitemap]
-changefreq = "weekly"
-filename = "sitemap.xml"
-priority = 0.5
+    changefreq = "weekly"
+    filename = "sitemap.xml"
+    priority = 0.5

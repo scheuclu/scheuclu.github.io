@@ -4,6 +4,7 @@ date: 2022-06-14T15:01:17+02:00
 draft: false
 featured_image: '/images/mandelbrot.png'
 katex: true
+tags: ["math", "Python"]
 ---
 <script type="text/javascript"
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">

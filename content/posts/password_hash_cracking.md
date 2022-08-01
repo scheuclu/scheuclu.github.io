@@ -6,15 +6,14 @@ featured_image: '/images/numbers.png'
 plotly: true
 math: true
 custom_table: true
+tags: ["cryptography", "hashing", "Python"]
 ---
 <script type="text/javascript"
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
 
-
-
-
+{{< toc >}}
 
 # Password Hash Cracking
 
