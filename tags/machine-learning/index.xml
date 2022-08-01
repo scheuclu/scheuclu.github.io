@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>machine learning on Lukas Scheucher</title><link>https://scheuclu.github.io/tags/machine-learning/</link><description>Recent content in machine learning on Lukas Scheucher</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 19 Jun 2022 15:01:17 +0200</lastBuildDate><atom:link href="https://scheuclu.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml"/><item><title>Neural Style Transfer</title><link>https://scheuclu.github.io/posts/neural_style_transfer/</link><pubDate>Sun, 19 Jun 2022 15:01:17 +0200</pubDate><guid>https://scheuclu.github.io/posts/neural_style_transfer/</guid><description>This is a test sentence.
+Neural Style transfer In this project, I implemented neural style transfer in PyTorch.
+The goals is simple. We take a content image and a style image. The goal is to keep the semantic content of the content image, but draw it in the style of the style image.
+To do this, we start with a simple classification Convolutional Neural Network (CNN). A CNN encodes a high resolution image into a large number of low-resolution features channels.</description></item><item><title>Sudoku Solver</title><link>https://scheuclu.github.io/posts/sudoko_solver/</link><pubDate>Sat, 02 Apr 2022 15:01:17 +0200</pubDate><guid>https://scheuclu.github.io/posts/sudoko_solver/</guid><description>Github Deployed
+Sudoku Solver You can use the Sudoku Solver whenever you are stuck on a puzzle.
+I support both manual input as well as input via camera or webcam.
+Note At the moment, the camera input is buggy, so you probably have to correct the results manually.
+Here&amp;rsquo;s a little demo of how it works.
+Overview The solver consists of the following steps:
+Read the image from webcam Identify the Sudoku grid using classical computer vision Dewarp the grid to rectangular format Split the rectangle into 9x9 subimages Identify the content of each subimage Brute Force a solution</description></item></channel></rss>
