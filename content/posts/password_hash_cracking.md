@@ -26,17 +26,17 @@ So, out of curiosity, I started investigating how these kinds of attacks work.
 
 
 ---
-## How does on log in on a website?
+## How does one log in on a website?
 In essence, a website has a database with all valid logins. When you enter your username and password, you provide one on these valid logins.  
-However, these databases do not actually store your passwords. This would be incredibly unsage for, if the website gets compromised and the database leaked, everyone would now know your passwordm which is probably being used on other pages too.
+However, these databases do not actually store your passwords. This would be incredibly unsafe for, if the website gets compromised and the database leaked, everyone would now know your password, which is probably being used on other pages too.
 
-Instead, your username is stored alongside with the hashvalue of your password. If a leak occurs, only the hash ir published. An attacker would still not know which password led to that hash.
+Instead, your username is stored alongside the hashvalue of your password. If a leak occurs, only the hash is published. An attacker would still not know which password led to that hash.
 ### A quick intro to hash-functions
 The fundamental technology behind safe logins to websites are hash-functions. A hash function has a few characteristics:
-- *arbitrary length input*
-- *non-injective, non-surjective:* Each input maps to a specific output. Different inputs may map to the same output. There may be points in the output space that have no corresponding input.
-- Given two points $x_1$ and $x_2$ in the input space which map to $y_1$ and $y_2$ in the output space, there should be no correlation between $||x_2-y_1||$ and $||y_2-y_1||$. In lay-mans terms, this means that if two points in the input space are simiar, if you run them through the hash funciton, they should give very diffrent outputs.
-- All points in the output space should be approximately equally likely. This is another way of saying there should be as little collisions as possible.
+- **arbitrary length input**
+- **non-injective, non-surjective:** Each input maps to a specific output. Different inputs may map to the same output. There may be points in the output space that have no corresponding input.
+- **no correlation between inputs and outputs:** Given two points $x_1$ and $x_2$ in the input space which map to $y_1$ and $y_2$ in the output space, there should be no correlation between $||x_2-y_1||$ and $||y_2-y_1||$. In lay-mans terms, this means that if two points in the input space are simiar, if you run them through the hash funciton, they should give very diffrent outputs.
+- **uniform output distribution:** All points in the output space should be approximately equally likely. This is another way of saying there should be as little collisions as possible.
 
 ### Let's design a trivial hash function
 
@@ -86,13 +86,13 @@ Also:
 | water   | 150        |
 | Water   | 146        |
 
-I hope you see the pattern. Even if we extended this hash funciton to more bit, it would be incredibly unsafe.
+I hope you see the pattern. Even if we extended this hash function to a greater bit length, it would be incredibly unsafe.
 
 
 
 What we have created above is an *8-bit hash function*, meaning that it's output space is 8-bits. The hashes are therefor numbers in the range of `[0 ... 255]`.
 
-Modern hash functions are much larger than that. E.g. `SHA256` uses 256 bit, meaning that there are a total of `2^56`(`1.1579209e+77`) different outputs.
+Modern hash functions are much larger than that. E.g. [SHA256](https://en.wikipedia.org/wiki/SHA-2) uses 256 bit, meaning that there are a total of `2^56`(`1.1579209e+77`) different outputs.
 For comparison, the number of sand grains on earth is estimated at `7.5e18` grains and the number of atoms on earth at `1.33e50`.
 So, if you created a new planet earth for every sand grain on earh, you would need `9.8e68` atoms, which is still a billion times less than there are outpout possibilities in `SHA-256`.
 
@@ -104,13 +104,13 @@ A bad practice, which is still encountered sometimes, would be for the server to
 However, there is always the possibility for a server to be compromised and the table to be leaked on the internet.
 So, instead, websites typically store your username along with the hash of your password. When you log in, the server quickly computes the hash of the password you provided and compares it against the one it has stored.
 
-If the table ever gets leaked, an attacker now has you password hash. But in order to get access to you account, he then needs to find a password that produces this exact hash. Typically this is done via brute-force attack.
+If the table ever gets leaked, an attacker now has you password hash. But in order to get access to your account, he then needs to find a password that produces this exact hash. Typically this is done via brute-force attack.
 
 ---
-## Brute-forcing password hashes.
+## Brute-forcing password hashes
 
 As discussed about, servers sometimes get compromised and login data is leaked. I guess this is what happened to me,
-An attacker now has a username and a password hash. Let's assume the hash is in `SHA256` format.
+An attacker now has a username and a password hash. Let's assume the hash is in `SHA1` format.
 
 Now, in a brute-force attack, an attacker simply tries to guess the password by trying all possible combinations of inputs until they find one that creates the leaked hash. If he finds one, the hacker can then log into the site using this input as password. Due to collissions, this might not even be the same password you've been using, although it is highly likely.
 
@@ -118,8 +118,9 @@ Now, in a brute-force attack, an attacker simply tries to guess the password by 
 ---
 ## Complexity considerations
 
-Brute forcing the password from a hash seems straight forward. I reality however, this task very quickly becomes computationally infeasible one is willing to spend an excuberant amount of computational resources.  
-Let's look at some examples.
+Brute forcing the password from a hash seems straight forward. In reality however, this task very quickly becomes computationally infeasible, unless one is willing to spend an excuberant amount of computational resources.  
+
+Let's look at some examples:
 
 ### A naive approach
 
@@ -144,7 +145,7 @@ this gives the following table:
 | 8 | 2.1e14 | 2.6 h | 82 ct |
 | 9 | 1.3e16 | 6.9 d | 51 $ |
 
-Now, most of us have experienced that websites require us to use special symbols. Let's just consider the 5 most used ones: `["_", ".",  "-", "!", "@", "*", "$", "?", "&", "%"]`. We now have `72` different characters in out alpahabet.
+Now, most of us have experienced that websites require us to use special symbols. Let's just consider the 5 most used ones: `["_", ".",  "-", "!", "@", "*", "$", "?", "&", "%"]`. We now have `72` different characters in our alpahabet.
 
 This simple addition changes the table as follows:
 
@@ -171,7 +172,7 @@ However, we can take advantage of human psychology. Here's some of the most comm
 3. Different characters have different likelihood. E.g. The most commonly used letter is `e` and the most commonly used special character is `-`.
 4. Passwords are often variations of actual words/names. E.g. `Jacob  -> J4c0b!`. By using a dictionary and performing most common manipulations, we can quickly test for all of the variations.
 
-While taking likelihoods into account does not change the total search space, it drastically reduced the average time until the password is found.
+While taking likelihoods into account does not change the total search space, it drastically reduces the average time until the password is found.
 
 Let's have a look at the numbers with just 2 simple modifcations to the last table:
 1. We assume that only the first symbol is a captial letter
@@ -225,7 +226,7 @@ What is more, the problem can be perfectly parallelized in multiple GPUs, thus a
 
 ## Password attack using dictionaries
 
-It has been shown that, non-tech savy users in particular, use password derived from real words. This could be names, cities or something similar which is then slightly modified to adhere to modern website password standards. E.g. "Beverly" could become "1Beverly!", "B3v3rly", or "_Beverly_".
+It has been shown that, non-tech savy users in particular, use password derived from real words. This could be names, cities or something similar which is then slightly modified to adhere to modern website password standards. E.g. "Beverly" could become "1Beverly!", "B3v3rly", or "?Beverly1!".
 If the password follows this patterns, than cracking using dictionaries plus modifications can be extremly effective.
 
 From our 3 example passwords above, 2 should be crackable like that. let's give it a try!\
