@@ -21,7 +21,7 @@
     padding: 5px 4px;
   }
   tbody td {
-    font-size: 13px;
+    font-size: 14px;
   }
   thead {
     background: #607bbf;
@@ -40,11 +40,11 @@
     text-align: left;
   }
   tfoot {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     color: #000000;
     border-top: 2px solid #000000;
   }
   tfoot td {
-    font-size: 12px;
+    font-size: 14px;
   }
