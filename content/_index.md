@@ -16,6 +16,7 @@ featured_image: '/images/profile.jpeg'
 </script>
 
 
+
 Hi, I am an Austrian software developer who turned from Big Tech to freelancing during the COVID pandemic.
 
 I have an education from [Technical University of Munich](https://www.tum.de/en/) as well as [Stanford University](https://www.stanford.edu/). However, I consider myself a lifelong learner, so I have plenty or other certifications.
@@ -31,3 +32,12 @@ Other than that, I am passionate about nature, fiction and Formula 1 (🇳🇱)!
 Please check out my [CV](https://scheuclu.github.io/cv/) and [portfolio](https://scheuclu.github.io/posts/).
 
 **If you think I could help you with your project, please dont hestitate to [reach out](https://scheuclu.github.io/contact/)!**
+
+---
+<p><img src="/images/logos/google.svg" alt="" height="50" />
+   <img src="/images/logos/vw.png" alt="" height="50" />
+   <img src="/images/logos/stanford.png" alt="" height="55" />
+   <img src="/images/logos/tum.png" alt="" height="50" />
+</p>
+
+---
