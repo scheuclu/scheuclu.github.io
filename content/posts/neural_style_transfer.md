@@ -2,7 +2,7 @@
 title: "Neural Style Transfer"
 date: 2022-06-19T15:01:17+02:00
 draft: false
-featured_image: '/images/style_transfer/result/favourites/edritz_pop_art.jpg'
+featured_image: '/images/post_banners/style_transfer.jpg'
 math: true
 tags: ["machine learning", "Python"]
 ---

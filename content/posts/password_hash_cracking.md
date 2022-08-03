@@ -2,7 +2,7 @@
 title: "Password hash cracking"
 date: 2022-07-27T15:01:17+02:00
 draft: false
-featured_image: '/images/numbers.png'
+featured_image: '/images/post_banners/password.webp'
 plotly: true
 math: true
 custom_table: true
