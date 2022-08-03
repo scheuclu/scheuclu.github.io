@@ -5,7 +5,7 @@ title = 'Lukas Scheucher'
 theme = "ananke"
 custom_css = ["css/table.css"]
 enableEmoji = true
-disqusShortname =  'lukasscheucher'
+disqusShortname =  'scheuclu-github-io'
 
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
