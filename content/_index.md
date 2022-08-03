@@ -27,7 +27,7 @@ Fields that excite me are Machine Learning, Data Visualization and Blockchain Te
 I believe technology is about empowering people, so I value anything that brings accessibility to the masses and removes centralization.
 
 
-Other than that, I am passionate about nature, fiction and Formula 1 (🇳🇱)!
+Other than that, I am passionate about nature, fiction and Formula 1 ([🇳🇱](https://www.youtube.com/watch?v=43HCYSXZ9GI))!
 
 Please check out my [CV](https://scheuclu.github.io/cv/) and [portfolio](https://scheuclu.github.io/posts/).
 
