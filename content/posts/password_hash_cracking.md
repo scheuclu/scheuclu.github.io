@@ -17,6 +17,7 @@ tags: ["cryptography", "hashing", "Python"]
 
 # Password Hash Cracking
 
+---
 ## Motivation
 I recently had an unauthorized access on my Amazon account. Luckily, Amazon sent me a 2-factor authentification request to confirm my login, which I promptly denied, but it got me interested in how these kind of attacks work.
 Now, I have been using a password manager for years ([Bitwarden](https://bitwarden.com/)), but my Amazon account predates it and I guess, I was too lazy to change the password.
@@ -24,16 +25,20 @@ Now, I have been using a password manager for years ([Bitwarden](https://bitward
 So, out of curiosity, I started investigating how these kinds of attacks work.
 
 
-## How do logins work?
+---
+## How does on log in on a website?
+In essence, a website has a database with all valid logins. When you enter your username and password, you provide one on these valid logins.  
+However, these databases do not actually store your passwords. This would be incredibly unsage for, if the website gets compromised and the database leaked, everyone would now know your passwordm which is probably being used on other pages too.
+
+Instead, your username is stored alongside with the hashvalue of your password. If a leak occurs, only the hash ir published. An attacker would still not know which password led to that hash.
 ### A quick intro to hash-functions
 The fundamental technology behind safe logins to websites are hash-functions. A hash function has a few characteristics:
-- arbitrary length input
-- non-injective, non-surjective: Each input maps to a specific output. Different inputs may map to the same output. There may be points in the output space that have no corresponding input.
+- *arbitrary length input*
+- *non-injective, non-surjective:* Each input maps to a specific output. Different inputs may map to the same output. There may be points in the output space that have no corresponding input.
 - Given two points $x_1$ and $x_2$ in the input space which map to $y_1$ and $y_2$ in the output space, there should be no correlation between $||x_2-y_1||$ and $||y_2-y_1||$. In lay-mans terms, this means that if two points in the input space are simiar, if you run them through the hash funciton, they should give very diffrent outputs.
 - All points in the output space should be approximately equally likely. This is another way of saying there should be as little collisions as possible.
 
 ### Let's design a trivial hash function
-Let's consider a basic example.
 
 We are searching for a hash function that maps a number $N \in [0 ... 2^8]$ to a hash $h(N) \in [0 ... 2^8]$.
 
@@ -47,7 +52,7 @@ def naive_hash(n):
   return h
 ```
 
-Now, we can take any arbirary `ASCII` string and compute it's hash by summing up the hashes of it's binary representations module `2^8`.
+Now, we can take any arbirary `ASCII` string and compute it's hash by summing up the hashes of it's binary representations modulo `2^8`.
 
 ```Python
 def dummy_hash_password(s):
@@ -81,13 +86,14 @@ Also:
 | water   | 150        |
 | Water   | 146        |
 
-I hope you see the pattern. Even if we extenden this hash funciton to more bit, it would be incredibly unsafe.
+I hope you see the pattern. Even if we extended this hash funciton to more bit, it would be incredibly unsafe.
 
 
 
 What we have created above is an *8-bit hash function*, meaning that it's output space is 8-bits. The hashes are therefor numbers in the range of `[0 ... 255]`.
 
-Modern hash functions are much larger than that. E.g. `SHA256` uses 256 bit, meaning that there are a total of `2^56`(`1.1579209e+77`) different hashes. For comparison, the number of sand grains on earth is estimated at `7.5e18` grains and the number of atoms on earth at `1.33e50`.
+Modern hash functions are much larger than that. E.g. `SHA256` uses 256 bit, meaning that there are a total of `2^56`(`1.1579209e+77`) different outputs.
+For comparison, the number of sand grains on earth is estimated at `7.5e18` grains and the number of atoms on earth at `1.33e50`.
 So, if you created a new planet earth for every sand grain on earh, you would need `9.8e68` atoms, which is still a billion times less than there are outpout possibilities in `SHA-256`.
 
 
@@ -95,36 +101,40 @@ So, if you created a new planet earth for every sand grain on earh, you would ne
 When you login online, you typically provide a `username` and a `password`.
 The server then checks whether this particular combination is known.
 A bad practice, which is still encountered sometimes, would be for the server to simply store a table of `username`-`password` combinations.
-However, there is always the possibility for a server to be compromised and the table to be leaked to the internet.
+However, there is always the possibility for a server to be compromised and the table to be leaked on the internet.
 So, instead, websites typically store your username along with the hash of your password. When you log in, the server quickly computes the hash of the password you provided and compares it against the one it has stored.
 
 If the table ever gets leaked, an attacker now has you password hash. But in order to get access to you account, he then needs to find a password that produces this exact hash. Typically this is done via brute-force attack.
 
+---
 ## Brute-forcing password hashes.
 
 As discussed about, servers sometimes get compromised and login data is leaked. I guess this is what happened to me,
-An attacher now has a username and a password hash. Let's assume the hash is in `SHA256` format.
+An attacker now has a username and a password hash. Let's assume the hash is in `SHA256` format.
 
-Now, in a brute-force attach, an attacher simply tries to guess the password by trying all possible combinations of inputs until they find one that creates the leaked hash. If he finds one, the can then log into the site using this input as password.
+Now, in a brute-force attack, an attacker simply tries to guess the password by trying all possible combinations of inputs until they find one that creates the leaked hash. If he finds one, the hacker can then log into the site using this input as password. Due to collissions, this might not even be the same password you've been using, although it is highly likely.
 
 
+---
 ## Complexity considerations
 
+Brute forcing the password from a hash seems straight forward. I reality however, this task very quickly becomes computationally infeasible one is willing to spend an excuberant amount of computational resources.  
+Let's look at some examples.
 
 ### A naive approach
 
 To get an idea of how complex it is to recover the password from a hash, let's make a few assumptions:
 
-1. Our hash is SHA-1. This is a 128 bit hash.
-1. The password opnly consists of upper and lower case letter as welll as digits. This means we have an alphatebt of `26*2+10=62` characters.
-1. We use an RTX-3090 to recover hashes. It has a SHA-1 hashrate of 22757.6 MH/s.
-1. We use the cheapest cloud provide I was able to find, at 0.31$ an hour for the RTX-3090.
+1. Our hash is [SHA-1](https://en.wikipedia.org/wiki/SHA-1). This is a 128 bit hash.
+1. The password only consists of upper and lower case letter as well as digits. This means we have an alphabet of `26*2+10=62` characters.
+1. We use an RTX-3090 on vast.ai to recover hashes. It has a SHA-1 hashrate of 22757.6 MH/s.
+1. We use the cheapest cloud provider I was able to find, at 0.31$ an hour for the RTX-3090.
 
 this gives the following table:
 
-| password length | # password options | time to bruteforce [min] | cost |
+| password length | # password options | time to bruteforce [min] | cost[^1] |
 | ----------- | ----------- | --- | --- |
-| 1 | 62 | 2 ns | free[^1] |
+| 1 | 62 | 2 ns | free |
 | 2 | 3.8e3 | 16 us | free |
 | 3 | 2.3e5 | 104 ms | free |
 | 4 | 1.4e7 | 6 ms | free |
@@ -134,11 +144,11 @@ this gives the following table:
 | 8 | 2.1e14 | 2.6 h | 82 ct |
 | 9 | 1.3e16 | 6.9 d | 51 $ |
 
-Now, most of us have experienced that websites require us to use special symbols. Let's just consider the 5 most used ones: `["_", ".",  "-", "!", "@", "*", "$", "?", "&", "%"]`. We now have `72` different characters in out vocabulary.
+Now, most of us have experienced that websites require us to use special symbols. Let's just consider the 5 most used ones: `["_", ".",  "-", "!", "@", "*", "$", "?", "&", "%"]`. We now have `72` different characters in out alpahabet.
 
 This simple addition changes the table as follows:
 
-| password length | # password options | time to bruteforce [min] | cost |
+| password length | # password options | time to bruteforce [min] | cost[^1] |
 | ----------- | ----------- | --- | --- |
 | 1 | 62 | 4 ns | free |
 | 2 | 3.8e3 | 23 us | free |
@@ -156,9 +166,9 @@ This simple addition changes the table as follows:
 As you can see, it very quicly becomes infeasible to crack this hash with increasing password length.
 
 However, we can take advantage of human psychology. Here's some of the most commonly used observations
-1. People often use capital letters at the beginning
-2. Special characters are most likely used at the very end
-3. Different characters have different likelihood. E.g. The most commonly used letter is `e` and the most commonly used special character is `-`
+1. People often use capital letters at the beginning.
+2. Special characters are most likely used at the very end.
+3. Different characters have different likelihood. E.g. The most commonly used letter is `e` and the most commonly used special character is `-`.
 4. Passwords are often variations of actual words/names. E.g. `Jacob  -> J4c0b!`. By using a dictionary and performing most common manipulations, we can quickly test for all of the variations.
 
 While taking likelihoods into account does not change the total search space, it drastically reduced the average time until the password is found.
@@ -169,8 +179,8 @@ Let's have a look at the numbers with just 2 simple modifcations to the last tab
 
 This results in the following table:
 
-{.table}
-| password length | # password options | time to bruteforce [min] | cost |
+
+| password length | # password options | time to bruteforce [min] | cost[^1] |
 | ----------- | ----------- | --- | --- |
 | 4 | 1213056 | 90 us | free |
 | 5 | 43670016 | 320 us | free |
@@ -183,6 +193,53 @@ This results in the following table:
 As you can see, the cost is drastically reduced, while we will still recover a vast majoriy of passwords using these assumptions.
 
 
+## A concrete example
+With all of the above considerations in mind, let's have a look at some arbirarly though-up passwords:
+
+| password | SHA1 hash |
+| --- | --- |
+| tabletop | dd702c884ce8179f443aca343d61175408396b4f |
+| !Energy! | dd8a0212c9a8950ac116962cf2bf3b6746e95a79 |
+| 21EXg4vI | 7a0fd2b60e88468a60db9d8812b0cfa2d1f25700 |
+
+We use hashcat on a RTX-3090 to try and attach these hashes.  
+As discuassed above, a pure bruteforce approach with all possible characters, quickly becomes infeasible.
+An attacker will most likely try the simplest appraoches first, and then successively try more expensive configs, until success is achieved.
+Pretending not to know the cleartext passwords, we will try the following modes:
+
+| attack mode | descrition | # combos | worst case runtime | worst case cost |
+| ---         | ---        | ---      | ---                | ---             |
+| 1 | combination of lower-case letters | 2.1e11 | 9s | free |
+| 2 | upper-, lower-case, numbers and 10 symbols | 7.2e14 | 9h | TODO |
+| 3 | dictinary attack with simple modifications | TODO | TODO | TODO |
+
+Using these attach modes one after the other, I was able to crackt the passwords in the following timespans:
+
+| password | time to crack | cost |
+| ---      | ---           | ---           |
+| tabletop | 2 min | free |
+| !Energy! | 26 h| 8 $ |
+| 21EXg4vI | 3 h | 1 $ |
+
+What is more, the problem can be perfectly parallelized in multiple GPUs, thus almost bringing down the solution time arbitrarily, without a significant increase in overall cost.
+
+## Password attack using dictionaries
+
+It has been shown that, non-tech savy users in particular, use password derived from real words. This could be names, cities or something similar which is then slightly modified to adhere to modern website password standards. E.g. "Beverly" could become "1Beverly!", "B3v3rly", or "_Beverly_".
+If the password follows this patterns, than cracking using dictionaries plus modifications can be extremly effective.
+
+From our 3 example passwords above, 2 should be crackable like that. let's give it a try!\
+First, we need to find a dictionary to use.
+
+**[TBD]**
 
 
-[^1]: Practically zero cost involved.
+
+
+
+
+
+
+
+[^1]: Based on a RTX-3090 instance on [vast.ai](https://vast.ai).
+[^2]: Practically zero cost involved.
