@@ -1,1 +1,2 @@
+{% raw %}{% seo %}{% endraw %}
 theme: jekyll-theme-minimal
