@@ -5,10 +5,15 @@ draft: false
 featured_image: '/images/post_banners/style_transfer.jpg'
 math: true
 tags: ["machine learning", "Python"]
+summary: "In Neural Style Transfer, artifical neural networks are used to combine two images,
+such that the result has the content of one but the style of another image.  \n
+
+I go through the basic concepts and mathematical formulatins and also provide a working codebase for you to try. \n
+
+A gallery with some of my proudest results is provided at the end :).
+"
 ---
 
-
-This is a test sentence.
 
 # Neural Style transfer
 

@@ -6,6 +6,10 @@ featured_image: '/images/post_banners/sudoku.png'
 katex: true
 
 tags: ["machine learning", "Python"]
+summary: "You can use the Sudoku Solver whenever you are stuck on a puzzle.  \n
+
+It can read a playing field either directly via webcam or by uploading a picture and quicklu provide you with the solution.
+"
 ---
 
 

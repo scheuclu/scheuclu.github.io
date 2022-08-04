@@ -3,12 +3,16 @@ title: "Implementing a calculator from scratch"
 date: 2022-05-29T15:01:17+02:00
 draft: false
 featured_image: '/images/post_banners/numbers.png'
+summary: "This project came out of an interview task I once had to complete.\n
+
+The goals is to implement a fully working calculator, without using any of the standard libraries.\n
+
+The calculator is able to accept arbitrary string that represent and expression or equation and solve it.\n
+"
 ---
 
 [Github](https://github.com/scheuclu/mandelbrot)&nbsp;&nbsp;
 [Deployed](https://share.streamlit.io/scheuclu/overkillcalculator/main/webpage.py)
-
-<!-- <iframe src="https://share.streamlit.io/scheuclu/overkillcalculator/main/webpage.py" width="800" height="800"></iframe> -->
 
 # The Overkill calculator
 The goal of this project was to implement a calculator from scratch.

@@ -1,5 +1,5 @@
 ---
-title: "Password hash cracking"
+title: "Password Hash Cracking"
 date: 2022-07-27T15:01:17+02:00
 draft: false
 featured_image: '/images/post_banners/password.webp'
@@ -7,10 +7,18 @@ plotly: true
 math: true
 custom_table: true
 tags: ["cryptography", "hashing", "Python"]
+summary: "I'm taking a look how user-authentifications works.  \n
+We will dive a bit into hash functions  \n
+Finally, we try to recover passwords from leaked hashes using GPUs.  \n
+Addittionally, I'll provide some complexity considerations as well as cost estimations."
 ---
 <script type="text/javascript"
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
+
+thsi is a test
+Even more so.
+
 
 
 {{< toc >}}

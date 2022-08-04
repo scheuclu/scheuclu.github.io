@@ -4,6 +4,12 @@ date: 2022-03-29T15:01:17+02:00
 draft: false
 featured_image: '/images/post_banners/google_logo.png'
 tags: ["career"]
+summary: "In this post, I go over my main motivation for leaving my job at Google. \n
+
+Getting into this company was a long dream of mine, and I had worked years to get there, so the desicions was not easy.  \n
+
+I am hoping that my experience will help other developers making career desicions.
+"
 ---
 
 

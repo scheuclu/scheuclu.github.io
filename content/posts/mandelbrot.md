@@ -5,6 +5,11 @@ draft: false
 featured_image: '/images/post_banners/mandelbrot.png'
 katex: true
 tags: ["math", "Python"]
+summary: "In this post we look at the fampus mandelbrot set.  \n
+
+I implemented it both in C++ and Python and provide some complexity considerations.  \n
+
+Finally, I built  dashboard that allows you to interactivelu explore the set and create beautiful animations."
 ---
 <script type="text/javascript"
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
