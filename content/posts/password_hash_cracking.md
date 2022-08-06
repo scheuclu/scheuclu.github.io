@@ -1,6 +1,7 @@
 ---
 title: "Password Hash Cracking"
 date: 2022-07-27T15:01:17+02:00
+show_reading_time: true
 draft: false
 featured_image: '/images/post_banners/password.webp'
 plotly: true
@@ -16,14 +17,7 @@ Addittionally, I'll provide some complexity considerations as well as cost estim
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
-thsi is a test
-Even more so.
-
-
-
 {{< toc >}}
-
-# Password Hash Cracking
 
 ---
 ## Motivation

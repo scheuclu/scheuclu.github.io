@@ -1,6 +1,7 @@
 ---
 title: "Mandelbrot images"
 date: 2022-06-14T15:01:17+02:00
+show_reading_time: true
 draft: false
 featured_image: '/images/post_banners/mandelbrot.png'
 katex: true
@@ -17,8 +18,6 @@ Finally, I built  dashboard that allows you to interactivelu explore the set and
 
 [Github](https://github.com/scheuclu/mandelbrot)&nbsp;&nbsp;
 [Deployed](https://share.streamlit.io/scheuclu/mandelbrot_python/main/webpage.py)
-
-# The Mandelbrot Explorer
 
 ## Overview
 The goal of this project was to implement an interactive explorer for the [mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set).

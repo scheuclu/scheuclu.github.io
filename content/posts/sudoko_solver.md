@@ -1,6 +1,7 @@
 ---
 title: "Sudoku Solver"
 date: 2022-04-02T15:01:17+02:00
+show_reading_time: true
 draft: false
 featured_image: '/images/post_banners/sudoku.png'
 katex: true
@@ -12,11 +13,8 @@ It can read a playing field either directly via webcam or by uploading a picture
 "
 ---
 
-
 [Github](https://github.com/scheuclu/sudoku_solver)&nbsp;&nbsp;
 [Deployed](https://share.streamlit.io/scheuclu/sudoku_solver/main/webpage.py)
-
-# Sudoku Solver
 
 You can use the Sudoku Solver whenever you are stuck on a puzzle.
 

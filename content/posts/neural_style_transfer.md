@@ -1,6 +1,7 @@
 ---
 title: "Neural Style Transfer"
 date: 2022-06-19T15:01:17+02:00
+show_reading_time: true
 draft: false
 featured_image: '/images/post_banners/style_transfer.jpg'
 math: true
@@ -14,8 +15,6 @@ A gallery with some of my proudest results is provided at the end :).
 "
 ---
 
-
-# Neural Style transfer
 
 In this project, I implemented neural style transfer in PyTorch.
 
