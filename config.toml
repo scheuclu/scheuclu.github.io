@@ -23,6 +23,12 @@ enableRobotsTXT = true
     weight = 300
     url = "/tags/"
 
+[[menu.main]]
+    name = "CV"
+    identifier = "cv"
+    weight = 300
+    url = "http://www.scheuclu.com/hugo_cv"
+
 [markup.goldmark.renderer]
     unsafe = true
 [[params.ananke_socials]]
