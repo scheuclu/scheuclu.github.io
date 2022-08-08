@@ -1,11 +1,11 @@
 {{ $currentPageUrl := .Permalink }}
 {{ if .Params.tags }}
-  <!-- <ul class="list dib ml0 pl0" id="tags">
+  <ul class="list dib ml0 pl0" id="tags">
     <li class="b black dib mb2 mr3">Tags: </li>
     {{ range .Params.tags }}
       <li class="black dib mb2 mr2"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="link mid-gray dim">{{ . }}</a> </li>
     {{ end }}
-  </ul> -->
+  </ul>
   {{ $name := index .Params.tags 0 }}
   {{ $name := $name | urlize }}
   {{ $tags := index .Site.Taxonomies.tags $name }}
