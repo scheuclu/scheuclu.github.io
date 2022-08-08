@@ -6,6 +6,7 @@ theme = "ananke"
 custom_css = ["css/table.css"]
 enableEmoji = true
 disqusShortname =  'scheuclu-github-io'
+favicon = "/favicon.ico"
 
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
