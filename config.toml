@@ -1,5 +1,5 @@
 googleAnalytics = "G-FL0RFP3MP3"
-baseURL = 'https://scheuclu.github.io'
+baseURL = 'https://scheuclu.com'
 languageCode = 'en-us'
 title = 'Lukas Scheucher'
 theme = "ananke"
