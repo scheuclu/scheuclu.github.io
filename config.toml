@@ -28,7 +28,7 @@ enableRobotsTXT = true
     name = "CV"
     identifier = "cv"
     weight = 300
-    url = "http://www.scheuclu.com/hugo_cv"
+    url = "https://scheuclu.github.io/hugo_cv"
 
 [markup.goldmark.renderer]
     unsafe = true
