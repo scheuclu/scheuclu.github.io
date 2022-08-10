@@ -17,6 +17,8 @@ Addittionally, I'll provide some complexity considerations as well as cost estim
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
+[Github](https://github.com/scheuclu/hash_cracking)&nbsp;&nbsp;
+
 {{< toc >}}
 
 ---
