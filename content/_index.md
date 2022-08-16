@@ -29,9 +29,9 @@ I believe technology is about empowering people, so I value anything that brings
 
 Other than that, I am passionate about nature, fiction and Formula 1 ([🇳🇱](https://www.youtube.com/watch?v=43HCYSXZ9GI))!
 
-Please check out my [CV](https://scheuclu.github.io/cv/) and [portfolio](https://scheuclu.github.io/posts/).
+Please check out my [CV](https://scheuclu.github.io/hugo_cv/) and [portfolio](https://scheuclu.com/posts/).
 
-**If you think I could help you with your project, please dont hestitate to [reach out](https://scheuclu.github.io/contact/)!**
+**If you think I could help you with your project, please dont hestitate to [reach out](https://scheuclu.com/contact/)!**
 
 ---
 <p><img src="/images/logos/google.svg" alt="" height="50" />

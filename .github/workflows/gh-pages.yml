@@ -1,5 +1,8 @@
 name: github pages
 
+env:
+  HUGO_ENV: production
+
 on:
   push:
     branches:

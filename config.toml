@@ -1,5 +1,5 @@
 googleAnalytics = "G-FL0RFP3MP3"
-baseURL = 'https://scheuclu.github.io'
+baseURL = 'https://scheuclu.com'
 languageCode = 'en-us'
 title = 'Lukas Scheucher'
 theme = "ananke"
@@ -12,7 +12,6 @@ MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
 Paginate = 6 # this is set low for demonstrating with dummy content. Set to a higher number
-enableRobotsTXT = true
 
 [taxonomies]
    tag = "tags"
@@ -28,7 +27,7 @@ enableRobotsTXT = true
     name = "CV"
     identifier = "cv"
     weight = 300
-    url = "http://www.scheuclu.com/hugo_cv"
+    url = "https://scheuclu.github.io/hugo_cv"
 
 [markup.goldmark.renderer]
     unsafe = true
