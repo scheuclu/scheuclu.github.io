@@ -16,8 +16,16 @@
         {{ end }}
       </div>
     </div>
+
     {{ template "_internal/google_analytics.html" . }}
     {{ template "_internal/google_analytics_async.html" . }}
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://riusdvwf.luse.stape.io/riusdvwf.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WTRD4B4');
+    </script>
 
 
     <script type="text/javascript">
@@ -58,7 +66,7 @@
     {{ template "_internal/google_analytics_async.html" . }}
     <meta name="keywords" content="{{ if .Params.Keywords }}{{ delimit .Params.Keywords ", " }}{{ end }}">
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
       ;r.type="text/javascript"
       ;r.integrity="sha384-+EO59vL/X7v6VE2s6/F4HxfHlK0nDUVWKVg8K9oUlvffAeeaShVBmbORTC2D3UF+"
@@ -84,7 +92,7 @@
       }return n._iq[e]};e.amplitude=n})(window,document);
     
       amplitude.getInstance().init("9ba8ad45c33ae901f4047366b9fe8227");
-    </script>
+    </script> -->
 
   </header>
 {{ end }}
