@@ -41,7 +41,9 @@
     {{ end }}
 	{{ block "head" . }}{{ partial "head-additions.html" . }}{{ end }}
 	  
-     <script defer data-domain="scheuclu.com" src="https://plausible.io/js/plausible.js"></script>
+     <!-- <script defer data-domain="scheuclu.com" src="https://plausible.io/js/plausible.js"></script> -->
+     <script defer data-domain="scheuclu.com" data-api="/granite/api/event" src="/granite/js/script.js"></script>
+
   </head>
 
   <body class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
