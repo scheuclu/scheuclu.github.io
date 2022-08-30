@@ -1,5 +1,5 @@
 ---
-title: "How to lie using statistics"
+title: "How to decieve using statistics"
 date: 2022-08-29T15:01:17+02:00
 show_reading_time: true
 draft: false
