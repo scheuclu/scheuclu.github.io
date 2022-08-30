@@ -1,4 +1,3 @@
-
 [TOC]
 
 # How it works
@@ -25,3 +24,9 @@ hugo new posts/my-first-post.md
 ```bash
 hugo server -D
 ```
+
+# Deployment
+
+The site is deployed on netlify
+[![Netlify Deploy Status](https://api.netlify.com/api/v1/badges/ebb8f08b-5796-4ed7-b016-e23dcd8ed5d7/deploy-status)](https://app.netlify.com/sites/inspiring-chebakia-744b5a/deploys)
+

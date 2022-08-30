@@ -1,5 +1,5 @@
 ---
-title: "How to lie using statistics"
+title: "How to decieve using statistics"
 date: 2022-08-29T15:01:17+02:00
 show_reading_time: true
 draft: false
@@ -22,7 +22,7 @@ This one is my absolute favourite!
 If you see this the first time and it does not drop your jaw, then you are either much smarter than me or you may have to read it again :)
 
 Let's consider the contentious topic of gender equality.
-In my example, we shall consider a University. The administration want to make sure their addmissions are fair, so the gather some number and are shocked:
+In my example, we shall consider a university. The administration wants to make sure that admissions are fair, so they gather some numbers and are shocked:
 
 <table>
   <tr>
@@ -51,10 +51,11 @@ In my example, we shall consider a University. The administration want to make s
 
 <div class="boxWarning">It seems like women are disavantaged overall!</div>
 
-It appears that womean are significantly disavantaged in college addmissions!!
-The administration wants to figure out who is to blame. The uni has 6 different departments (A-F), so they dig down into these, to see whos to blame.
+It appears that women are significantly disavantaged in college addmissions.
+The administration wants to figure out who is to blame.  
+Now, the uni has 6 different departments (A-F), so the administration has a closer look into each one of these, to see who is to blame.
 
-The results are unexpected.
+The results are unexpected:
 
 <table>
   <tr>
