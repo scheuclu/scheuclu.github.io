@@ -138,7 +138,7 @@ The results are unexpected.
 <div class="boxWarning">It seems like men are disavantaged in every single department!</div>
 
 
-The above is the crux of the Simpsons paradox. Even using the exact same raw-data. By simple grouping the the data dfferently, one can obtain seeminly opposite insights. You can think of it as the gerrymandering of statistics ;)
+The above is the crux of the Simpsons paradox. Even using the exact same raw-data. By simply grouping the data differently, one can obtain seemingly opposite insights. You can think of it as the gerrymandering of statistics ;)
 
 In fact, I did not fully make up the above data, but took inspiration from the [Berkeley admission data](https://en.wikipedia.org/wiki/Simpson's_paradox#Examples).
 
