@@ -33,10 +33,10 @@ In my example, we shall consider a University. The administration want to make s
   <tr>
     <td><b>applied</b></td>
     <td><b>accepted</b></td>
-    <td><b>percent</b></td>
+    <td><b>%</b></td>
     <td><b>applied</b></td>
     <td><b>accepted</b></td>
-    <td><b>percent</b></td>
+    <td><b>%</b></td>
   </tr>
     <tr>
     <td><b>All Departments</td>
@@ -65,10 +65,10 @@ The results are unexpected.
   <tr>
     <td><b>applied</b></td>
     <td><b>accepted</b></td>
-    <td><b>percent</b></td>
+    <td><b>%</b></td>
     <td><b>applied</b></td>
     <td><b>accepted</b></td>
-    <td><b>percent</b></td>
+    <td><b>%</b></td>
   </tr>
     <tr>
     <td><b>A</td>
