@@ -105,6 +105,9 @@
     <link rel="stylesheet" href={{ "css/table.css" | relURL }} />
 {{ end }}
 
+<!-- See https://roneo.org/en/hugo-custom-warning-infoboxes/ -->
+<link href="{{ .Site.BaseURL }}css/boxes.css" rel="stylesheet">
+
 {{ if .Params.math }}{{ partial "helpers/katex.html" . }}{{ end }}
 <script>
   document.addEventListener("DOMContentLoaded", function() {
