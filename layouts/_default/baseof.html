@@ -41,8 +41,18 @@
     {{ end }}
 	{{ block "head" . }}{{ partial "head-additions.html" . }}{{ end }}
 	  
-     <!-- <script defer data-domain="scheuclu.com" src="https://plausible.io/js/plausible.js"></script> -->
-     <script defer data-domain="scheuclu.com" data-api="/granite/api/event" src="/granite/js/script.js"></script>
+    <!-- <script defer data-domain="scheuclu.com" src="https://plausible.io/js/plausible.js"></script> -->
+    <script defer data-domain="scheuclu.com" data-api="/granite/api/event" src="/granite/js/script.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="/js/brimstone.js?id=G-FL0RFP3MP3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-FL0RFP3MP3');
+    </script>
 
   </head>
 
