@@ -5,6 +5,7 @@ show_reading_time: true
 draft: false
 featured_image: '/images/post_banners/statistics.jpeg'
 katex: true
+plotly: true
 
 custom_table: true
 
@@ -142,6 +143,20 @@ The results are unexpected:
 The above is the crux of the Simpsons paradox. Even using the exact same raw-data. By simply grouping the data differently, one can obtain seemingly opposite insights. You can think of it as the gerrymandering of statistics ;)
 
 In fact, I did not fully make up the above data, but took inspiration from the [Berkeley admission data](https://en.wikipedia.org/wiki/Simpson's_paradox#Examples).
+
+
+### How does this happen?
+
+To understand what is going on here, I prepared a little plot below.
+The bar charts show the distribution of male and female applications. The black line shows the acceptance ratio per department. If you will, the "difficulty" of getting into any of these appartments.
+
+In essence, males and females have drastically different preference in their choice of study department.
+So, while female applicants are favoured in every single department, the vast majority of them applied to the very competitive departments with very low acceptance ratios. Males on the other hand, stongly favoured the "easy" departments. In Berkleys case, those were the engineering departments. So, even though males were still disadvantaged there, the fact that so many of them applied to department A and B, leads to there being more men in the university overall.
+
+{{< plotly json="/plots/simpsons.json" height="400px" >}}
+
+
+<div class="boxInfo">The Simpsons paradox shows that a trend that might show up in data that is put into grups, can disappear or even reverse when the groups ar combined. This is critical to understand if you want to interpret data correctly.</div>
 
 <!-- <div class="boxBell">Disclaimer</div>
 <div class="boxCheck">Check</div>
