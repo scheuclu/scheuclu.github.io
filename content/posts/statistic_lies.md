@@ -16,13 +16,23 @@ Thus, I would like this post to be a quick introduction, based on examples, on h
 "
 ---
 
+## Background
+I really love statistics but I find that it is hugely misused today, particularly in the media, to further agendas.
+Many people see that and have become quiet ignorant towards the whole field, quoting Winston Churchill with "*Do not trust any statistics you did not fake yourself.*".  
+I find this really unfortunate, as statistics done carefully can be really useful and lead to important insigts.
+So my first motivation is to maybe change your perception on this a bit.
+
+Second, when used naively, making statistical arguments can be quite dangerous. I think it's important to understand that having gathered some percentage valued is usually not enough. I would thus like to present a few examples on how nuanced the realy world can be.
+Hopefully I can help you a bit in being careful when drawing causality conclusions from obeserved data.
+
+
 ## 1. The Simpsons Paradox
 
 
 This one is my absolute favourite!
 If you see this the first time and it does not drop your jaw, then you are either much smarter than me or you may have to read it again :)
 
-Let's consider the contentious topic of gender equality.
+Let's consider the topic of gender equality, an important one as we will all agree.
 In my example, we shall consider a university. The administration wants to make sure that admissions are fair, so they gather some numbers and are shocked:
 
 <table>
