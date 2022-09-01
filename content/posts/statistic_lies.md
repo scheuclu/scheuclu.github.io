@@ -53,8 +53,8 @@ In my example, we shall consider a university. The administration wants to make 
 <div class="boxWarning">It seems like women are disavantaged overall!</div>
 
 It appears that women are significantly disavantaged in college addmissions.
-The administration wants to figure out who is to blame.  
-Now, the uni has 6 different departments (A-F), so the administration has a closer look into each one of these, to see who is to blame.
+Obviously, the administration wants to figure out who is to blame.  
+The uni has 6 different departments (A-F), so they have a closer look into each department, to hopefully figure out where the problem lies.
 
 The results are unexpected:
 
@@ -64,6 +64,7 @@ The results are unexpected:
     <td colspan="3"><b>male</b></td>
     <td colspan="3"><b>female</b></td>
   </tr>
+
   <tr>
     <td><b>applied</b></td>
     <td><b>accepted</b></td>
@@ -72,7 +73,8 @@ The results are unexpected:
     <td><b>accepted</b></td>
     <td><b>%</b></td>
   </tr>
-    <tr>
+
+  <tr>
     <td><b>A</td>
     <td>825</td>
     <td>528</td>
@@ -81,8 +83,8 @@ The results are unexpected:
     <td>89</td>
     <td style="background-color:#B4EFA3">82.4</td>
   </tr>
-  </tr>
-    <tr>
+
+  <tr>
     <td><b>B</td>
     <td>560</td>
     <td>353</td>
@@ -92,8 +94,7 @@ The results are unexpected:
     <td style="background-color:#B4EFA3">68.0</td>
   </tr>
 
-  </tr>
-    <tr>
+  <tr>
     <td><b>C</td>
     <td>325</td>
     <td>110</td>
@@ -103,8 +104,7 @@ The results are unexpected:
     <td style="background-color:#E1E47B">34.1</td>
   </tr>
 
-  </tr>
-    <tr>
+  <tr>
     <td><b>D</td>
     <td>417</td>
     <td>138</td>
@@ -125,8 +125,7 @@ The results are unexpected:
     <td style="background-color:#B4EFA3">28.0</td>
   </tr>
 
-  </tr>
-    <tr>
+  <tr>
     <td><b>F</td>
     <td>373</td>
     <td>22</td>
@@ -134,6 +133,19 @@ The results are unexpected:
     <td>341</td>
     <td>24</td>
     <td style="background-color:#B4EFA3">7.0</td>
+  </tr>
+
+  <tr style="border-bottom:2px solid black; padding: 0px 0px">
+  </tr>
+
+  <tr id="noborder" style="background-color:#FFFFFF">
+    <td style="color:#888888"> </td>
+    <td style="color:#888888" >2701</td>
+    <td style="color:#888888">1204</td>
+    <td style="color:#888888; background-color:#B4EFA3">44.6</td>
+    <td style="color:#888888">1835</td>
+    <td style="color:#888888">573</td>
+    <td style="background-color:#E47B7B">31.2</td>
   </tr>
 </table>
 
@@ -151,7 +163,7 @@ To understand what is going on here, I prepared a little plot below.
 The bar charts show the distribution of male and female applications. The black line shows the acceptance ratio per department. If you will, the "difficulty" of getting into any of these appartments.
 
 In essence, males and females have drastically different preference in their choice of study department.
-So, while female applicants are favoured in every single department, the vast majority of them applied to the very competitive departments with very low acceptance ratios. Males on the other hand, stongly favoured the "easy" departments. In Berkleys case, those were the engineering departments. So, even though males were still disadvantaged there, the fact that so many of them applied to department A and B, leads to there being more men in the university overall.
+So, while female applicants are favoured in every single department, the vast majority of them applied to the very competitive departments with very low acceptance ratios. Males on the other hand, stongly favoured the "easy" departments. In Berkleys case, those were the engineering departments. So, even though males were still disadvantaged percentage-wise, the fact that so many of them applied to department A and B, leads to there being more men in the university overall.
 
 {{< plotly json="/plots/simpsons.json" height="400px" >}}
 
