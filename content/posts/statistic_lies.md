@@ -10,7 +10,7 @@ plotly: true
 custom_table: true
 
 tags: ["machine learning", "Python"]
-summary: "It always bothers me when people sell some perentages they calculated some how as 'statistics', particularly in the media.
+summary: "It always bothers me when people sell some percentages they calculated somehow as 'statistics', particularly in the media.
 
 Thus, I would like this post to be a quick introduction, based on examples, on how manipluative some badly done statistics can be.
 "
@@ -19,11 +19,11 @@ Thus, I would like this post to be a quick introduction, based on examples, on h
 ## Background
 I really love statistics but I find that it is hugely misused today, particularly in the media, to further agendas.
 Many people see that and have become quiet ignorant towards the whole field, quoting Winston Churchill with "*Do not trust any statistics you did not fake yourself.*".  
-I find this really unfortunate, as statistics done carefully can be really useful and lead to important insigts.
+I find this really unfortunate, as statistics done carefully can be really useful and lead to important insights.
 So my first motivation is to maybe change your perception on this a bit.
 
-Second, when used naively, making statistical arguments can be quite dangerous. I think it's important to understand that having gathered some percentage valued is usually not enough. I would thus like to present a few examples on how nuanced the realy world can be.
-Hopefully I can help you a bit in being careful when drawing causality conclusions from obeserved data.
+Second, when used naively, making statistical arguments can be quite dangerous. I think it's important to understand that having gathered some percentage values is usually not enough. I would thus like to present a few examples on how nuanced the real world can be.
+Hopefully I can help you a bit in being careful when drawing causality conclusions from observed data.
 
 
 ## 1. The Simpsons Paradox
