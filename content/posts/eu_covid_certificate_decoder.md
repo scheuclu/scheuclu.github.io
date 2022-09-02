@@ -14,14 +14,14 @@ summary: " A small little webtool that allows you to read out the information st
 
 
 ## Background
-I've always been intrigued as to how the digital COVID certificate works. Especially after I realized the the [CovPassCheck]([TODO](https://play.google.com/store/apps/details?id=de.rki.covpass.checkapp&hl=en_GB&gl=US)) app works completely offline. So, no database is being queried to check the validity of a QR code or the date of last vaccination. Instead, all the data must be contained within the QR code.
+I've always been intrigued as to how the digital COVID certificate works. Especially after I realized that the [CovPassCheck]([TODO](https://play.google.com/store/apps/details?id=de.rki.covpass.checkapp&hl=en_GB&gl=US)) app works completely offline. So, no database is being queried to check the validity of a QR code or the date of last vaccination. Instead, all the data must be contained within the QR code.
 
 ## Findings
 
-- The codes ares standard Model 1 QR codes of type 6
+- The codes ares standard model 1 QR codes of type 6
 - The data in the QR-code is base45 encoded
 - The data has been compressed with zlib before encoding
-- The data is digitally signed by a private key, e.g. from Robert Koch Institute.
+- The data is digitally signed with a private key, e.g. from Robert Koch Institute.
   - The public key can be used on the extracted data to verify this signature.
 
 We can very easily undo all of these steps, with simple Python modules.
