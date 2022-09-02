@@ -23,18 +23,18 @@ Addittionally, I'll provide some complexity considerations as well as cost estim
 
 ---
 ## Motivation
-I recently had an unauthorized access on my Amazon account. Luckily, Amazon sent me a 2-factor authentification request to confirm my login, which I promptly denied, but it got me interested in how these kind of attacks work.
+I recently had an unauthorized access on my Amazon account. Luckily, Amazon sent me a 2-factor authentification request to confirm my login, which I promptly denied, but it got me interested in how these kind of attacks work.  
 Now, I have been using a password manager for years ([Bitwarden](https://bitwarden.com/)), but my Amazon account predates it and I guess, I was too lazy to change the password.
 
 So, out of curiosity, I started investigating how these kinds of attacks work.
 
 
 ---
-## How does one log in on a website?
-In essence, a website has a database with all valid logins. When you enter your username and password, you provide one on these valid logins.  
-However, these databases do not actually store your passwords. This would be incredibly unsafe for, if the website gets compromised and the database leaked, everyone would now know your password, which is probably being used on other pages too.
+## How do online logins work?
+In essence, a website has a database with of valid logins. When you enter your username and password, you provide one on these valid logins.  
+However, these databases do not actually store your passwords because it would be incredibly unsafe for, if the website gets compromised and the database leaked, everyone would now know your password, which is probably being used on other pages too.
 
-Instead, your username is stored alongside the hashvalue of your password. If a leak occurs, only the hash is published. An attacker would still not know which password led to that hash.
+Instead, your username is stored alongside the hash of your password. If a leak occurs, only the hash is published. An attacker would still not know what password led to that hash.
 ### A quick intro to hash-functions
 The fundamental technology behind safe logins to websites are hash-functions. A hash function has a few characteristics:
 - **arbitrary length input**
