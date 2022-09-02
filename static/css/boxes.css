@@ -17,7 +17,7 @@
   [class*=" box"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: "icons-boxes" !important;
-    background-color: #fffeb4a3;
+    /* background-color: #ffffffa3; */
   
     padding: 0.5em;
     margin-top: 1em;
