@@ -2,7 +2,7 @@
 title: "Why I quit my job at Google"
 date: 2022-03-29T15:01:17+02:00
 show_reading_time: true
-draft: false
+draft: true
 featured_image: '/images/post_banners/google_logo.png'
 tags: ["career"]
 summary: "In this post, I go over my main motivation for leaving my job at Google. \n
