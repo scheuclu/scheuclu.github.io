@@ -6,6 +6,9 @@ featured_image: '/images/post_banners/solana.png'
 math: true
 tags: ["blockchain"]
 summary: "I created a simple DApp running on Solana via the buildspace.so course.
+
+Is a collaborative GIF image board, where users can authenticate via their Solana wallet.
+The Solana blockchain is used as a database. The app is hosted decentralized on IPFS and ICP.
 "
 ---
 
