@@ -16,8 +16,10 @@ Finally, I built  dashboard that allows you to interactivelu explore the set and
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
-[Github](https://github.com/scheuclu/mandelbrot)&nbsp;&nbsp;
-[Deployed](https://share.streamlit.io/scheuclu/mandelbrot_python/main/webpage.py)
+{{< fancybuttons 
+    github="https://github.com/scheuclu/mandelbrot"
+    deployed="https://share.streamlit.io/scheuclu/mandelbrot_python/main/webpage.py"
+>}}
 
 ## Overview
 The goal of this project was to implement an interactive explorer for the [mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set).

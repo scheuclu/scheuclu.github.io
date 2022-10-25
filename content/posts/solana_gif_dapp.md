@@ -9,7 +9,10 @@ summary: "I created a simple DApp running on Solana via the buildspace.so course
 "
 ---
 
-{{< fancybuttons  github="https://github.com/scheuclu/gif-portal-starter" deployed="https://pv5wp-eyaaa-aaaad-qeena-cai.ic0.app" >}}
+{{< fancybuttons 
+    github="https://github.com/scheuclu/gif-portal-starter"
+    deployed="https://pv5wp-eyaaa-aaaad-qeena-cai.ic0.app"
+>}}
 
 <!-- {{% fancybuttons %}} -->
 

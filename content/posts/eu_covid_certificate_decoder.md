@@ -9,8 +9,11 @@ tags: ["Python"]
 summary: " A small little webtool that allows you to read out the information stored in your EU Covid certificate (Green Pass).
 "
 ---
-[Github](https://github.com/scheuclu/qr_code_reader)&nbsp;&nbsp;
-[Deployed](https://scheuclu-qr-code-reader-webpage-kth84d.streamlitapp.com/)
+
+{{< fancybuttons 
+    github="https://github.com/scheuclu/qr_code_reader"
+    deployed="https://scheuclu-qr-code-reader-webpage-kth84d.streamlitapp.com"
+>}}
 
 
 ## Background

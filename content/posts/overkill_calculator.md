@@ -12,8 +12,10 @@ The calculator is able to accept arbitrary string that represent and expression 
 "
 ---
 
-[Github](https://github.com/scheuclu/mandelbrot)&nbsp;&nbsp;
-[Deployed](https://share.streamlit.io/scheuclu/overkillcalculator/main/webpage.py)
+{{< fancybuttons 
+    github="https://github.com/scheuclu/mandelbrot"
+    deployed="https://share.streamlit.io/scheuclu/overkillcalculator/main/webpage.py"
+>}}
 
 The goal of this project was to implement a calculator from scratch.
 Notably, I wanted to do it without the use of any sophisticated libraries.

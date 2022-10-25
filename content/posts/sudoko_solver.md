@@ -13,8 +13,10 @@ It can read a playing field either directly via webcam or by uploading a picture
 "
 ---
 
-[Github](https://github.com/scheuclu/sudoku_solver)&nbsp;&nbsp;
-[Deployed](https://share.streamlit.io/scheuclu/sudoku_solver/main/webpage.py)
+{{< fancybuttons 
+    github="https://github.com/scheuclu/sudoku_solver"
+    deployed="https://share.streamlit.io/scheuclu/sudoku_solver/main/webpage.py"
+>}}
 
 You can use the Sudoku Solver whenever you are stuck on a puzzle.
 
