@@ -9,8 +9,9 @@ summary: "I created a simple DApp running on Solana via the buildspace.so course
 "
 ---
 
-[Github](https://github.com/scheuclu/gif-portal-starter)&nbsp;&nbsp;
-[Deployed](https://pv5wp-eyaaa-aaaad-qeena-cai.ic0.app)
+{{< fancybuttons  github="https://github.com/scheuclu/gif-portal-starter" deployed="https://pv5wp-eyaaa-aaaad-qeena-cai.ic0.app" >}}
+
+<!-- {{% fancybuttons %}} -->
 
 After having done multiple Ethereum projects, I wanted to learn something new. I decided to give Solana a try.
 
