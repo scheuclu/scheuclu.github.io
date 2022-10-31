@@ -24,9 +24,9 @@ It implements the following
 - **A smart contract**
   - The contract represent an NFT, based on ERC721, that is used to trade star ownership. I used [open-zeppelin](https://www.openzeppelin.com) for the ERC721 interface.
 - **A fully covered set of tests.**
-  - I used truffle and mocha for testing my smart contract. All tests can be found [here]([TODO](https://github.com/scheuclu/SolidityStarNotary/blob/main/truffle/test/TestStarNotary.js)).
+  - I used truffle and mocha for testing my smart contract. All tests can be found [here](https://github.com/scheuclu/SolidityStarNotary/blob/main/truffle/test/TestStarNotary.js).
 - **Deployment to the Goerli test chain**
-  - I find the development workflow on Ethereum very excruciating compared to Solana. It has become painful to get your hands onto testnet tokens. And, even if you get some, deploying to the testnet is expensive. If you want to use my contract, you will need some Goerli I recommend [this faucet](https://goerli-faucet.pk910.de/).
+  - I find the development workflow on Ethereum very excruciating compared to Solana. It has become painful to get your hands onto testnet tokens. And, even if you get some, deploying to the testnet is expensive. If you want to use my contract, you will need some Goerli. I recommend [this faucet](https://goerli-faucet.pk910.de/).
 
 ## Demo
 {{< youtube e_G52ygBv94 >}}
