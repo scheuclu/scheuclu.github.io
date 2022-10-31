@@ -19,12 +19,12 @@ The Solana blockchain is used as a database. The app is hosted decentralized on 
 
 <!-- {{% fancybuttons %}} -->
 
-After having done multiple Ethereum projects, I wanted to learn something new. I decided to give Solana a try.
+After having done multiple Ethereum projects, I wanted to learn something new. I decided to give [Solana](https://solana.com) a try.
 
 # The App
 
 This is a simple GIF dashboard. The [Solana blockchain](www.solana.com) is used as a database, keeping track of user submissions.
-Users authenticate via a Solana web3 wallet, preferrably Phantom wallet, and can then collaboratively submit new GIFs.
+Users authenticate via a Solana web3 wallet, preferably Phantom wallet, and can then collaboratively submit new GIFs.
 
 ![](https://github.com/scheuclu/gif-portal-starter/blob/main/gif-portal.gif?raw=true)
 
@@ -33,7 +33,7 @@ Users authenticate via a Solana web3 wallet, preferrably Phantom wallet, and can
 Implementing this in web3 brings some special features.
 
 1. There is no database. GIFs are stored directly on the Solana user accounts. The users pay for this with a small fee on GIF submission.
-2. The frontend is hosted on Internet Computer and IPFS. This means that the webpage itself is hosted on a blockchain. There are no physical servers and no centralized app location. I was able to host this completely anonymously and with no cost to myself. It also cannot be censored by governments.
+2. The frontend is hosted on [Internet Computer](https://internetcomputer.org) and [IPFS](https://ipfs.tech). This means that the webpage itself is hosted on a blockchain. There are no physical servers and no centralized app location. I was able to host this completely anonymously and with no cost to myself. It also cannot be censored by governments.
 
 # About Solana
 ## Proof of History
@@ -44,6 +44,7 @@ The main idea is that it is guaranteed, that time has passed to create a block.
 Read this [excellent post](https://github.com/lsmod/proof-of-history-explained) on how this helps to improve some aspects of Proof of Stake consensus.
 ## Scalability
 Solana is capable of processing a very high number of transactions, exceeding even POS Ethereum.
+At the moment(Oct 2022), Solana performs 10 times as much transactions a day as Ethereum.
 
 ## Decentralization
 A relatively large stake of the original SOL allocation is owned by a small number of insiders, leading to potential issues with network improvisation and centralized control.
