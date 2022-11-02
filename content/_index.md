@@ -1,5 +1,5 @@
 ---
-featured_image: '/images/profile.jpeg'
+featured_image: 'https://i.ibb.co/jwYqr42/profile.jpg'
 ---
 <script type="text/javascript"
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
