@@ -1,7 +1,7 @@
 baseURL = 'https://scheuclu.com'
 languageCode = 'en-us'
 title = 'Lukas Scheucher'
-theme = ["github.com/scheuclu/gohugo-theme-ananke"]
+theme = "ananke"
 custom_css = ["css/table.css"]
 enableEmoji = true
 disqusShortname =  'scheuclu-github-io'
