@@ -39,10 +39,6 @@ Paginate = 6 # this is set low for demonstrating with dummy content. Set to a hi
 [[params.ananke_socials]]
     name = "youtube"
     url = "https://www.youtube.com/channel/UC0So4gJ11qUZI_dzqVMOq8w"
-[[params.ananke_socials]]
-    name = "goodreads"
-    url = "https://www.goodreads.com/user/show/157750897-lukas-scheucher"
-    color= '#ff0000'
 [params]
     site_logo = "/images/logo_white_small.png"
 [sitemap]
