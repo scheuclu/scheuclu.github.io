@@ -23,6 +23,26 @@ body {
 	overflow: hidden;
 }
 
+/* unvisited link */
+a:link {
+color: red;
+}
+
+/* visited link */
+a:visited {
+color: green;
+}
+
+/* mouse over link */
+a:hover {
+color: hotpink;
+}
+
+/* selected link */
+a:active {
+color: yellow;
+}
+
 .main {
 	position: absolute;
 	height: 100%;
