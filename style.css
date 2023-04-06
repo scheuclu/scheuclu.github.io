@@ -25,12 +25,12 @@ body {
 
 /* unvisited link */
 a:link {
-color: red;
+color: #1a8cff;
 }
 
 /* visited link */
 a:visited {
-color: green;
+color: #1a8cff;
 }
 
 /* mouse over link */
