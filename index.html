@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lukas Scheucher &mdash; CV</title>
+  <style>
+:root {
+    --text: #1a1a1a;
+    --text-secondary: #555;
+    --accent: #213980;
+    --border: #d0d0d0;
+    --bg: #fff;
+    --max-width: 800px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: Calibri, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.5;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 40px auto;
+    padding: 0 24px;
+}
+
+header { margin-bottom: 8px; }
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 6px;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.contact a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.contact a:hover { color: var(--accent); }
+
+.contact span::before {
+    margin-right: 4px;
+    opacity: 0.6;
+}
+
+hr.header-rule {
+    border: none;
+    border-top: 2px solid var(--text);
+    margin-bottom: 4px;
+}
+
+hr.section-rule {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 16px 0 4px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text);
+    margin: 16px 0 8px;
+}
+
+.subsection { margin-bottom: 12px; }
+
+.sub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+}
+
+.sub-header h3 {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.sub-header .dates {
+    font-size: 14px;
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 2px 0 0;
+}
+
+ul li {
+    font-size: 14px;
+    margin-bottom: 2px;
+    line-height: 1.45;
+}
+
+ul li ul { margin-top: 2px; }
+
+a { color: var(--accent); }
+
+.skills ul { list-style: none; padding-left: 0; }
+.skills li { padding-left: 0; }
+
+.headline {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--text-secondary);
+}
+
+@media print {
+    body { font-size: 13px; }
+    .container { max-width: 100%; margin: 0; padding: 0; }
+    h1 { font-size: 26px; }
+    h2 { font-size: 14px; margin: 10px 0 4px; }
+    .subsection { margin-bottom: 8px; }
+    a { color: var(--text); text-decoration: none; }
+}
+
+@media (max-width: 600px) {
+    .container { margin: 16px auto; padding: 0 16px; }
+    h1 { font-size: 26px; }
+    .sub-header { flex-direction: column; }
+    .sub-header .dates { text-align: left; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Lukas Scheucher</h1>
+    <div class="contact">
+    <span><a href="mailto:scheuclu@gmail.com">&#9993; scheuclu@gmail.com</a></span>
+    <span><a href="https://github.com/scheuclu">&#128736; scheuclu</a></span>
+    <span><a href="https://linkedin.com/in/scheuclu">&#128279; scheuclu</a></span>
+    </div>
+    <hr class="header-rule">
+  </header>
+  
+  <hr class="section-rule">
+<h2>Work Experience</h2>
+<div class="subsection">
+  <div class="sub-header"><h3>Senior Software Engineer II - CollegeVine, Remote</h3><span class="dates">Jan 2026 &ndash; present</span></div>
+<ul>
+  <li>Building the core agentic AI platform at CollegeVine, which provides AI agents to 210+ universities for recruitment, advising, and alumni engagement.</li>
+  <li>Architected a sandboxed agent execution environment using Claude Code and E2B, with full MCP integration, secure per-user data scoping, and comprehensive monitoring and logging.</li>
+  <li>Built a self-improving meta-agent that analyzes production logs to autonomously identify issues and continuously improve the user experience.</li>
+  <li>Working across the full stack: Python and AI tooling on the backend, PureScript and JavaScript on the frontend.</li>
+</ul>
+
+</div>
+<div class="subsection">
+  <div class="sub-header"><h3>CTO, cofounder - Compass Labs, London</h3><span class="dates">Mar 2023 &ndash; Jan 2026</span></div>
+<ul>
+  <li>Developed the initial product, a backtesting and analysis tool for crypto traders using Python, Solidity, NextJS, and more. We provide a complete solution, from data sourcing to strategy development and testing to result analysis—our product covers it all.</li>
+  <li>Led a team of 5 engineers to expand and add features while still actively contributing daily.</li>
+  <li>Developed strategies for dynamic liquidity provisioning in decentralized liquidity pools.</li>
+  <li>Built a comprehensive API for execution and trading in crypto. Added LangChain and MCP tools on top to allow LLMs to interact with it.</li>
+  <li>Raised close to <u>2M USD</u> in VC funding, including <u>a16z</u> and other top-tier investors, and onboarded institutional clients.</li>
+  <li>Regularly attended and spoke at conferences, met with industry stakeholders, organized hackathons, and more.</li>
+  <li>Departed January 2026 to pursue new opportunities.</li>
+</ul>
+
+</div>
+<div class="subsection">
+  <div class="sub-header"><h3>Founder in Residence - Entrepreneur First, London</h3><span class="dates">Feb 2022 &ndash; Sep 2022</span></div>
+<ul>
+  <li>Went through the <u>Entrepreneur First accelerator</u> where I explored several ideas, which eventually culminated in Compass Labs.</li>
+  <li>Entrepreneur First is a global talent investor that helps individuals find co-founders, develop startup ideas, and build high-growth technology companies from scratch.</li>
+  <li>Entrepreneur First has an acceptance rate of about 1%.</li>
+</ul>
+
+</div>
+<div class="subsection">
+  <div class="sub-header"><h3>Software Engineer - Google, Munich</h3><span class="dates">Nov 2019 &ndash; Dec 2021</span></div>
+<ul>
+  <li>Started as a Site Reliability Engineer at Google. In my first 6 months, ideated and built an analytics pipeline to monitor global rollout policy compliance across Google. Received <a href="https://drive.google.com/file/d/1hR_jHUA2D8b4GTmtInScrbKZXcQ4to-s">spot bonus</a> from L9 engineer (highest level).</li>
+  <li>Completed a bungee placement at Google X (Moonshots), where we built a wearable device that was released and recently featured in <a href="https://time.com/7094544/arcteryx-and-skip-mo-go">Time Magazine</a>.</li>
+  <li>Received a consistent rating of "Strongly Exceeds Expectations." Promoted after the first year.</li>
+</ul>
+
+</div>
+<div class="subsection">
+  <div class="sub-header"><h3>Deep/Machine Learning Engineer - Volkswagen, Munich</h3><span class="dates">Jun 2018 &ndash; Nov 2019</span></div>
+<ul>
+  <li>Developed a 2D perception model for autonomous driving using Convolutional Neural Networks (PyTorch, CUDA, C++).</li>
+  <li>Researched and built the models, then orchestrated the training and optimization loop, along with creating analysis tools.</li>
+  <li>Converted the final model to run on an embedded in-car device using quantization, pruning, and TensorRT.</li>
+  <li>Attended international conferences like NeurIPS, presented our company and brought valuable learnings back to our team.</li>
+</ul>
+
+</div>
+<hr class="section-rule">
+<h2>Education/Research Work</h2>
+<div class="subsection">
+  <div class="sub-header"><h3>Postgraduate Researcher, Technical University Munich</h3><span class="dates">Jul 2017 &ndash; Jun 2018</span></div>
+<ul>
+  <li>Worked on uncertainty quantification in physical simulations using machine learning models.</li>
+  <li>Created a Python framework for quantifying how statistical uncertainties in input variables affect the uncertainty in simulation results.</li>
+  <li>Contributed on a high performance distributed C++ research code.</li>
+</ul>
+
+</div>
+<div class="subsection">
+  <div class="sub-header"><h3>M.Sc. - TUM, Engineering Mechanics (Focus Aerospace), Munich</h3><span class="dates">Oct 2015 &ndash; Jul 2017</span></div>
+<ul>
+  <li>Worked on an HPC codebase (simulating fluid flow around aircraft), distributed over 100s to 1000s of machines (C++, MPI, OpenMP).</li>
+  <li>Researched uncertainty quantification in physical simulations using Bayesian methods and machine learning.</li>
+  <li>Contributed to shape optimization of supersonic aircraft wings through a collaborative C++ HPC codebase.</li>
+  <li>Became admin of our HPC compute cluster. 1000s of CPU cores and dozens of GPUs.</li>
+</ul>
+
+</div>
+<div class="subsection">
+  <div class="sub-header"><h3>B.Sc. - TUM, Engineering Mechanics, Munich</h3><span class="dates">Oct 2012 &ndash; Sep 2015</span></div>
+<ul>
+  <li>Held a variety of teaching assistant jobs. Mathematics, Informatics, Engineering Mechanics, ...</li>
+  <li>Received several scholarships.</li>
+</ul>
+
+</div>
+<div class="subsection">
+  <div class="sub-header"><h3>Visiting Graduate Researcher - Stanford University, California</h3><span class="dates">Oct 2016 &ndash; Jul 2017</span></div>
+<ul>
+  <li>Implemented gradient computation in a C++ fluid dynamics <a href="https://cmsoftinc.com/CMS-AeroF">code</a>. This code is used by the US Army to develop new aircraft.</li>
+  <li>My <a href="https://github.com/scheuclu/master-thesis/blob/master/Final_presentation/build/Presentation.pdf">final project</a> on coupling the fluid and solid mechanics codes received the highest possible grade.</li>
+</ul>
+
+</div>
+<hr class="section-rule">
+<h2>Technical Skills</h2>
+<div class="skills">
+<ul>
+  <li><strong>Languages</strong>: Python, Typescript, Solidity, Go, SQL, Bash</li>
+  <li><strong>Frontend</strong>: Next, React, Electron, CSS</li>
+  <li><strong>Backend/Infra</strong>: FastAPI, Pydantic, AWS (ECS, API Gateway, Cognito, WAF, SES, CloudWatch), GCP, Terraform, CI/CD</li>
+  <li><strong>Infra/Networking</strong>: Docker, load balancing, security (SOC2, ISO-27001, GDPR, DORA compliance)</li>
+  <li><strong>Machine Learning</strong>: Computer Vision, Recurrent Networks, Deep Learning, model training and selection, model compression</li>
+  <li><strong>Blockchain/DeFi</strong>: Bitcoin, Ethereum, Solidity, Decentralized Finance</li>
+  <li><strong>Developer Tools</strong>: Git, Cursor, Claude Code, MCP</li>
+  <li><strong>Libraries</strong>: TensorFlow, PyTorch, OpenMP, MPI, CUDA, Pandas, NumPy, Matplotlib, Plotly, Dash, Streamlit</li>
+</ul>
+</div>
+<hr class="section-rule">
+<h2>Interests/Hobbies</h2>
+<ul>
+  <li>Scuba diving (Dive Master), hiking, skiing, forestry</li>
+</ul>
+</div>
+</body>
+</html>
